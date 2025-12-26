@@ -10,3 +10,14 @@
 /Users/lucasbarreto/Desktop/estudos/Notificator/obj/Release/net8.0/refint/Notificator.dll
 /Users/lucasbarreto/Desktop/estudos/Notificator/obj/Release/net8.0/Notificator.pdb
 /Users/lucasbarreto/Desktop/estudos/Notificator/obj/Release/net8.0/ref/Notificator.dll
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/bin/Release/net8.0/Notificator.deps.json
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/bin/Release/net8.0/Notificator.dll
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/bin/Release/net8.0/Notificator.pdb
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.csproj.AssemblyReference.cache
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.csproj.CoreCompileInputs.cache
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.sourcelink.json
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.dll
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/refint/Notificator.dll
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/Notificator.pdb
+/Users/lucasbarreto/Desktop/estudos/Notificator/src/Notificator/obj/Release/net8.0/ref/Notificator.dll

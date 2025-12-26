@@ -8,7 +8,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageId>Notificator</PackageId>
     <Version>1.0.0</Version>
-    <Authors>Lucas Barreto</Authors>
+    <Authors>lucasbarreto.dev</Authors>
     <Description>Lightweight notification dispatcher</Description>
   </PropertyGroup>
 
