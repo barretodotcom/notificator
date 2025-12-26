@@ -7,7 +7,7 @@
 
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageId>NNotificator</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>lucasbarreto.dev</Authors>
     <Description>Lightweight notification dispatcher</Description>
     <RootNamespace>Notificator</RootNamespace>
@@ -18,3 +18,4 @@
   </ItemGroup>
 
 </Project>
+        
