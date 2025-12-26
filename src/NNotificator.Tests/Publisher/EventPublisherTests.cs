@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NNotificator.Abstractions;
 using NNotificator.DependencyInjection;
 using NNotificator.Tests.Types.Events;
+using NNotificator.Tests.Types.Handlers;
 using Xunit;
 
 namespace NNotificator.Tests.Publisher;
@@ -13,7 +14,9 @@ public class EventPublisherTests
     {
         var services = new ServiceCollection();
         
-        services.AddNotificator();
+        services.AddNotificator(
+            typeof(EventTestHandler).Assembly
+            );
 
         var provider = services.BuildServiceProvider();
 
@@ -24,6 +27,5 @@ public class EventPublisherTests
         await publisher.PublishAsync(@event);
         
         Assert.True(@event.WasRaised);
-
     }
 }

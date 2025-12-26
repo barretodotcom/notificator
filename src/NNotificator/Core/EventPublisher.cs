@@ -11,15 +11,18 @@ public class EventPublisher : IEventPublisher
     {
         _serviceProvider = serviceProvider;
     }
-    
-    public async Task PublishAsync<TEvent>(TEvent message, CancellationToken cancellationToken = default) where TEvent : IEvent
+
+    public async Task PublishAsync<TEvent>(TEvent message, CancellationToken cancellationToken = default)
+        where TEvent : IEvent
     {
-        var handlers = _serviceProvider.GetServices<IEventHandler<TEvent>>();
+        var eventType = message.GetType();
 
-        foreach (var handler in handlers)
-        {
-            await handler.HandleAsync(message, cancellationToken);
-        }
+        var handlerType = typeof(IEventHandler<>).MakeGenericType(eventType);
 
+        var handlers = _serviceProvider.GetServices(handlerType);
+
+        var tasks = handlers.Cast<dynamic>().Select(l => (Task)l.HandleAsync((dynamic)message, cancellationToken));
+
+        await Task.WhenAll(tasks);
     }
 }
