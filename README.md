@@ -92,6 +92,7 @@ after `SaveChanges` using an EF Core interceptor.
             foreach (var domainEvent in domainEvents)
                 await _notificator.PublishAsync(domainEvent);
         }
+   }
 ```
 ⸻
 ## Limitations
@@ -100,3 +101,7 @@ after `SaveChanges` using an EF Core interceptor.
 - No ordering guarantees
 
 ⸻
+
+## License
+
+MIT
