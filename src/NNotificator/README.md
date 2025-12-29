@@ -1,6 +1,6 @@
 ## Installation
 ```bash
-dotnet add package Notificator
+dotnet add package NNotificator
 ```
 
 ## What is it?
