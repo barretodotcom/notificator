@@ -7,7 +7,7 @@
 
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageId>NNotificator</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>lucasbarreto.dev</Authors>
     <Description>Lightweight notification dispatcher</Description>
     <RootNamespace>Notificator</RootNamespace>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
