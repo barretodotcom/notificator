@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using NNotificator.Abstractions;
+using NNotificator.Core;
 using NNotificator.Tests.Types.Events;
 
 namespace NNotificator.Tests.Types.Handlers;
