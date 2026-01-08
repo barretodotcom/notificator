@@ -16,7 +16,7 @@ public static class NNotificatorDependencyInjection
             .Where(l => !l.IsAbstract && !l.IsInterface)
             .SelectMany(t =>
                 t.GetInterfaces()
-                    .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IEventHandler<>))
+                    .Where(i => i.IsGenericType && (i.GetGenericTypeDefinition() == typeof(IEventHandler<,>) || i.GetGenericTypeDefinition() == typeof(IEventHandler<>)))
                     .Select(l => new { Interface = l, Implementation = t })
             );
 

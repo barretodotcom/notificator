@@ -25,4 +25,20 @@ public class EventPublisher : IEventPublisher
 
         await Task.WhenAll(tasks);
     }
+
+    public async Task<TResult> PublishAsync<T, TResult>(T message, CancellationToken cancellationToken = default)
+        where T : IEvent
+    {
+        var eventType = message.GetType();
+
+        var handlerType = typeof(IEventHandler<,>).MakeGenericType(eventType, typeof(TResult));
+
+        var handler = _serviceProvider.GetService(handlerType);
+
+        if (handler == null) throw new InvalidOperationException($"No handler registered for {eventType}");
+
+        TResult result = await ((dynamic)handler).HandleAsync((dynamic)message, cancellationToken);
+
+        return result;
+    }
 }
